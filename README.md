@@ -72,6 +72,10 @@ Screenshots:
 
 ---
 
+### Resources
+
+- [Error: Can't resolve 'remark' in '/vercel/workpath0/lib](https://github.com/vercel/next.js/discussions/18176)
+
 ## 📖 License
 
 - This project is licensed under [the terms of the 0BSD license](LICENSE).
