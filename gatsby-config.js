@@ -35,12 +35,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        path: `${__dirname}/content/assets/svg`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
