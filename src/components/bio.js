@@ -9,7 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-const Bio = () => {
+export default function Bio() {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
@@ -40,19 +40,16 @@ const Bio = () => {
   const avatar = data?.avatar?.childImageSharp?.fixed
 
   return (
-    <div className="bio">
+    <div className="mt-10 bg-gray-200 dark:bg-gray-800 rounded-lg p-3 flex md:flex-row flex-col items-center gap-4 max-w-screen-sm mx-auto justify-content py-2">
       {avatar && (
         <Image
           fixed={avatar}
           alt={author?.name || ``}
-          className="bio-avatar"
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
+          className="flex-none h-12 w-12 rounded-full border-2 border-white"
         />
       )}
       {author?.name && (
-        <p>
+        <p className="flex-1 ">
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
@@ -63,5 +60,3 @@ const Bio = () => {
     </div>
   )
 }
-
-export default Bio
