@@ -1,8 +1,11 @@
 # [Gatsby/TailwindCSS] Gatsby Markdown Blog Theme build with TailwindCSS
 
-> Stunning good looking minimal website just using system font and great looking images.
+> Website deployed at Vercel -> [https://gatsbyjs-tailwindcss-blog.vercel.app](https://gatsbyjs-tailwindcss-blog.vercel.app/)
 
-Website deployed at Vercel.com - [** Gatsby Markdown Blog - https://gatsbyjs-tailwindcss-blog.vercel.app/**](https://gatsbyjs-tailwindcss-blog.vercel.app/)
+---
+
+![Gatsby Blog Dark](mockup-image-dark.png "Gatsby Markdown Blog Dark")
+![Gatsby Blog Light](mockup-image-light.png "Gatsby Markdown Blog Light")
 
 ---
 
@@ -49,6 +52,7 @@ A quick look at the dependencies amd resources:
 
 - Bootstrapped with [Gatsby](www.gatsbyjs.com).
 - Styled with [TailwindCSS](https://tailwindcss.com/)
+- gatsby-plugin-web-font-loader [Gatsby plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-web-font-loader/)
 
 ## 🎓 Learning Gatsby
 
@@ -64,18 +68,12 @@ Here are some places to start:
 
 - I recommend to use either [Vercel](https://vercel.com) or [Netlify](https://netlify.com) for hosting your site.
 
----
-
-Screenshots:
-![Gatsby Blog Dark](mockup-image-dark.png "Gatsby Markdown Blog Dark")
-![Gatsby Blog Light](mockup-image-light.png "Gatsby Markdown Blog Light")
-
----
-
 ### Resources
 
+- [Mamba UI - free TailwindCSS components and templates](https://mambaui.com/)
 - [Error: Can't resolve 'remark' in '/vercel/workpath0/lib](https://github.com/vercel/next.js/discussions/18176)
-- [How to Dark Mode in React and Tailwind CSS](https://jeffjadulco.com/blog/dark-mode-react-tailwind/)
+- [How to Dark Mode in React and TailwindCSS](https://jeffjadulco.com/blog/dark-mode-react-tailwind/)
+- [Previewed - Create Awesome Mockups](https://previewed.app/mockup/maker/)
 
 ## 📖 License
 
