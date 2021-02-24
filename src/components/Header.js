@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import ButtonThemeSwitch from "./ButtonThemeSwitch"
+import ButtonThemeToggle from "./ButtonThemeToggle"
 
 const menuData = [
   { title: "Home", url: "/" },
@@ -75,7 +75,7 @@ export default function Header() {
               </div>
             </div>
             <div className="hidden md:ml-10 md:flex md:items-center md:space-x-6">
-              <ButtonThemeSwitch />
+              <ButtonThemeToggle />
             </div>
           </nav>
         </div>

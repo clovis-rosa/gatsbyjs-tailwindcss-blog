@@ -1,24 +1,27 @@
 import React from "react"
-import { useEffect, useState } from "react"
-import useDarkMode from "../hook/useDarkMode"
+import { ThemeContext } from "../context/themeContext"
 
-export default function BtnThemeSwitch() {
-  const [mounted, setMounted] = useState(false)
-  const [colorTheme, setTheme] = useDarkMode()
+export default function ButtonThemeToggle() {
+  const { theme, setTheme } = React.useContext(ThemeContext)
 
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
+  function isLight() {
+    return theme === "light"
+  }
 
-  if (!mounted) return null
+  const ToggleTheme = _ => {
+    setTheme(isLight() ? "dark" : "light")
+  }
 
   return (
     <button
-      onClick={() => setTheme(colorTheme)}
-      id="switchTheme"
       className="h-10 w-10 flex justify-center items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition duration-300"
-      aria-label="Toggle Dark Mode"
+      aria-label={isLight() ? "Activate Dark Mode" : "Activate Light Mode"}
+      title={isLight() ? "Activate Dark Mode" : "Activate Light Mode"}
+      onClick={ToggleTheme}
       type="button"
+      id="switchTheme"
     >
+      {console.log(theme, `============> isLight`)}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -26,7 +29,7 @@ export default function BtnThemeSwitch() {
         stroke="currentColor"
         className="h-4 w-4 text-gray-800 dark:text-gray-200"
       >
-        {colorTheme === "dark" ? (
+        {theme === "light" ? (
           <path
             strokeLinecap="round"
             strokeLinejoin="round"

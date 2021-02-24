@@ -75,6 +75,7 @@ Screenshots:
 ### Resources
 
 - [Error: Can't resolve 'remark' in '/vercel/workpath0/lib](https://github.com/vercel/next.js/discussions/18176)
+- [How to Dark Mode in React and Tailwind CSS](https://jeffjadulco.com/blog/dark-mode-react-tailwind/)
 
 ## 📖 License
 
